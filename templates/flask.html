@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <table align='center' border='2' cellpadding='1' cellspacing='1' width:500px'>
+  <thead>
+  <tr>
+    <th>ФИО</th>
+    <th>Наименование товара</th>
+     <th>Стоимость</th>
+     <th>Статус</th>
+   </tr>
+ </thead>
+  {% for u in usr %}
+  <tr>
+    <td>{{ u[0] }}</td>
+    <td>{{ u[1] }}</td>
+    <td>{{ u[2] }}</td>
+    <td>{{ u[3] }}</td>
+  </tr>
+
+{% endfor %}
+</table>
+</head>
+<body>
+
+</body>
+</html>
